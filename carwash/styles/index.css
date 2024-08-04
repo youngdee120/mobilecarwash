@@ -1,0 +1,87 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/car-wash-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Adjustments for heading and paragraph position */
+header {
+    position: relative;
+    top: -50px; /* Move the h1 and p tags up */
+}
+
+.components-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    transform: translateY(-30%); /* Adjust the position of buttons */
+}
+
+.component {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.component i {
+    margin-right: 10px;
+}
+
+.component:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .components-container {
+        position: static;
+        transform: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .component {
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+    }
+}

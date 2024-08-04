@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-card">
+            <h2>Sign Up</h2>
+            <form action="../private/signup.php" method="post">
+                <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+                <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+                <input type="tel" id="phone" placeholder="Phone" name="phone" required><br><br>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <input type="text" id="location" placeholder="Location" name="location" required><br><br>
+                <input type="text" id="address" placeholder="Address" name="address" required><br><br>
+                <input type="password" id="password" placeholder="Password" name="password" required><br><br>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm_password" required><br><br>
+                <input type="submit" value="Sign Up">
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+            <p><a href="../index.php">Home</a></p>
+        </div>
+        <div id="message-popup" class="popup hidden">
+            <p id="popup-text"></p>
+        </div>
+    </div>
+</body>
+</html>

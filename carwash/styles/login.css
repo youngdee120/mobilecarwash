@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-card form input[type="email"],
+.form-card form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-card form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-card form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-card p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-card p a:hover {
+    text-decoration: underline;
+}
+
+.form-card .links {
+    margin-top: 20px;
+}
+
+.form-card .links a {
+    display: block;
+    margin: 5px 0;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-card .links a:hover {
+    text-decoration: underline;
+}
